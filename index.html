@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Help</title>
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+  <header class="header">
+    <h1>Reviews & Help</h1>
+    <p>Need assistance? Find answers, leave feedback, or get in touch with us.</p>
+  </header>
+
+  <main class="help__container">
+    <!-- FAQ Section -->
+    <section class="help__faq">
+      <h2>Frequently Asked Questions (FAQ)</h2>
+      <div class="faq__item">
+        <h3>1. How do I reset my password?</h3>
+        <p>Click on "Forgot Password" on the login page, and follow the instructions sent to your email.</p>
+        <!-- <div class="star-rating">
+          <span>Rate this answer:</span>
+          <div class="stars">
+            <i class="star">☆</i><i class="star">☆</i><i class="star">☆</i><i class="star">☆</i><i class="star">☆</i>
+          </div> -->
+        </div>
+      </div>
+      <hr/>
+      <div class="faq__item">
+        <h3>2. How can I contact support?</h3>
+        <p>Use the contact form below or email us at <a href="mailto:support@example.com">support@example.com</a>.</p>
+        <!-- <div class="star-rating">
+          <span>Rate this answer:</span>
+          <div class="stars">
+            <i class="star">☆</i><i class="star">☆</i><i class="star">☆</i><i class="star">☆</i><i class="star">☆</i>
+          </div> -->
+        </div>
+      </div>
+      <hr/>
+      <div class="faq__item">
+            <h3>Q3: How do I provide feedback?</h3>
+            <p>Use the feedback section to rate us and share your thoughts.</p>
+            <!-- <div class="star-rating">
+              <span>Rate this answer:</span>
+              <div class="stars">
+                <i class="star">☆</i><i class="star">☆</i><i class="star">☆</i><i class="star">☆</i><i class="star">☆</i>
+              </div> -->
+            </div>
+          </div>
+    </section>
+    <!-- Contact Form Section -->
+    <section class="contact__form">
+      <h2>Contact Us & Give Feedback</h2>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+      </form>
+      <section class="feedback">
+        <p>How would you rate your experience?</p>
+        <div class="stars">
+          <span class="star" data-value="1">&#9733;</span>
+          <span class="star" data-value="2">&#9733;</span>
+          <span class="star" data-value="3">&#9733;</span>
+          <span class="star" data-value="4">&#9733;</span>
+          <span class="star" data-value="5">&#9733;</span>
+        </div>
+        <form id="feedbackForm">
+          <div class="form-group">
+            <label for="feedback">Your Feedback</label>
+            <textarea id="feedback" placeholder="Share your experience"></textarea>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </section>
+    </section>
+    <!-- User Problem Reporting -->
+    <section class="problem-reporting">
+      <h2>Asked a Questions</h2>
+      <form id="problemForm">
+        <div class="form-group">
+          <label for="problem">Describe Your Problem</label>
+          <textarea id="problem" placeholder="What issue are you facing?"></textarea>
+        </div>
+        <button type="submit" class="btn">report</button>
+      </form>
+      <h3>All Problems</h3>
+      <div class="problem-container" id="problemContainer">
+        <!-- Problems will appear here -->
+      </div>
+    </section>
+  </div>
+</main>
+  <script src="script.js"></script>
+</body>
+</html>
