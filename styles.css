@@ -1,0 +1,172 @@
+:root {
+    --primary-color: #bb9e59;
+    --primary-color-dark: #ffffff;
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+    --extra-light: #dfd7c5;
+    --white: #ffffff;
+    --max-width: 1200px;
+    --star-yellow: #ffce31;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--extra-light);
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--primary-color-dark);
+    padding: 2rem 1rem;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .header p {
+    font-size: 1rem;
+  }
+  
+  /* Container */
+  .help__container {
+    max-width: var(--max-width);
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  /* FAQ Section */
+  .help__faq {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+  }
+  
+  .help__faq h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+  }
+  
+  .faq__item {
+    margin-bottom: 1.5rem;
+  }
+  
+  .faq__item h3 {
+    font-size: 1.2rem;
+  }
+  
+  .faq__item p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .stars {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .star {
+    font-size: 2rem;
+    color: var(--text-light);
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.3s ease;
+  }
+  
+  .star:hover, .star.active {
+    color: var(--star-yellow);
+  }
+  
+  .star.active {
+    transform: scale(1.2);
+  }
+  
+  /* Contact & Feedback Form */
+  .contact__form, .feedback__form {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact__form h2, .feedback__form h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--extra-light);
+    border-radius: 5px;
+  }
+  
+  .btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: var(--text-dark);
+  }
+  .problem-container {
+    border: 1px solid var(--text-light);
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: var(--extra-light);
+    max-height: 200px;
+    overflow-y: auto;
+  }
+
+  .problem-item {
+    padding: 1rem;
+    margin-bottom: 0.8rem;
+    background-color: var(--white);
+    border-left: 4px solid var(--primary-color);
+    border-radius: 4px;
+  }
+
+  .problem-header {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .comment-section {
+    margin-top: 0.5rem;
+  }
+
+  .comment-section input {
+    margin-bottom: 0.5rem;
+    width: calc(100% - 80px);
+    display: inline-block;
+  }
+
+  .comment-section button {
+    margin-left: 0.5rem;
+    
+    
+  }
+
+  
